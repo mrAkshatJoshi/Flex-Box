@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    padding: 5px;
+    margin: 5px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+    background-image: url(./clouds-1923545_1280.png);
+    height: 130px;
+}
+
+.footer {
+    background-color: rgb(121, 65, 65);
+    height: 100px;
+}
+
+.main {
+    text-align: left;
+    background-image: url(./meditation-1384758_1280.jpg);
+    height: 330px;
+    font-size: 24px;
+}
+
+.aside1 {
+    background-image: url(./japanese-cherry-trees-2168858_1280.jpg);
+}
+
+.aside2 {
+    background-image: url(./japanese-cherry-trees-2168858_1280.jpg);
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex : 3;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+    .aside2 {
+        order: 2;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
